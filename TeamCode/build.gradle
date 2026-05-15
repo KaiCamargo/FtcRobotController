@@ -36,11 +36,5 @@ dependencies {
     implementation project(':FtcRobotController')
     // FTC Dashboard
     implementation 'com.acmerobotics.dashboard:dashboard:0.4.15'
-
-    // Pedro Pathing (Replace 'vX.X.X' with the latest release, e.g., v1.0.1)
-    implementation 'com.github.Pedro-Pathing:PedroPathing:v2.1.2'
-
-    // Pinpoint Driver (If not already included)
-    implementation 'com.qualcomm.hardware:pinpoint:1.0.0'
 }
 

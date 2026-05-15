@@ -14,6 +14,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.robotcore.external.navigation.Pose3D;
+import org.firstinspires.ftc.teamcode.pedroPathing.BrachistochroneCurve;
 import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 
 import java.util.List;
@@ -86,7 +87,7 @@ public class FullMasterAuto extends LinearOpMode {
      */
     private void driveTo(Pose target) {
         follower.followPath(follower.pathBuilder()
-                .addPath(new BezierLine(follower.getPose(), target.getPose()))
+                .addPath(new BrachistochroneCurve(follower.getPose(), target.getPose()))
                 .setConstantHeadingInterpolation(target.getHeading())
                 .build(), true);
 
