@@ -29,12 +29,15 @@ allprojects {
         // ADD THESE TWO LINES:
         maven { url = 'https://maven.brott.dev/' } // For FTC Dashboard
         maven { url = "https://mymaven.bylazar.com/releases" } // For Pedro Pathing
+        maven { url = 'https://jitpack.io' }
     }
 }
 
 dependencies {
     implementation project(':FtcRobotController')
     // FTC Dashboard
-    implementation 'com.acmerobotics.dashboard:dashboard:0.4.15'
+    implementation 'com.pedropathing:ftc:2.1.2'
+    implementation 'com.pedropathing:telemetry:1.0.0'
+    implementation 'com.acmerobotics.dashboard:dashboard:0.5.1'
 }
 
